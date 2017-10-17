@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wikipedia Viewer</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div id="header_col" class="row">
+
+			<img id="logo" class="center-block" src="wiki_logo.png">
+			<h1>Wikipedia Viewer</h1>
+			<h3>Search for Wikipedia articles or get a random one</h3>
+
+		</div>
+
+		<div class="row">
+
+			<input id="search" class="form-control center-block" type="text" onkeypress="enterHandler(event)">
+
+		</div>
+
+		<div id="btn_div" class="row">
+
+			<div class="col-xs-6">
+
+				<a id="random_btn" class="btn center-block" href="https://en.wikipedia.org/wiki/Special:Random" target="blank">Random article</a>
+
+			</div>
+
+			<div class="col-xs-6">
+
+				<button id="searchBtn" class="btn center-block" onclick="wikiSearch()">Search</button>
+
+			</div>
+
+		</div>
+
+		<div id="article_list" class="row">
+		
+		</div>
+
+	</div>
+
+</body>
+</html>
