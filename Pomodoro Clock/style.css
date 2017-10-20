@@ -1,0 +1,92 @@
+body {
+	background-color: white;
+}
+
+button:focus {
+	outline: none !important;
+}
+
+.container {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	height: 650px;
+}
+
+.timer {
+	height: 400px;
+	text-align: center;
+}
+
+.timer h1 {
+	font-family: 'Roboto Slab';
+	font-weight: bold;
+	font-size: 75px;
+	color: rgb(48, 51, 56);
+}
+
+.timer h3 {
+	font-family: 'Roboto Slab';
+	font-weight: bold;
+	font-size: 30px;
+	color: rgb(48, 51, 56);
+}
+
+.timer p {
+	margin-top: -25px;
+	font-family: Consolas;
+	font-weight: bold;
+	font-size: 150px;
+	color: rgb(48, 51, 56);
+}
+
+.control div {
+	margin-top: -50px;
+	height: 150px;
+	text-align: center;
+	font-family: Tahoma;
+	font-size: 40px;
+	color: rgb(48, 51, 56);
+}
+
+.control h3 {
+	font-family: 'Roboto Slab';
+	font-weight: bold;
+}
+
+.control button {
+	padding: 20px;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: #ff60a0;
+}
+
+.control button:active {
+	transform: translate(2px, 2px);
+}
+
+.buttons div {
+	text-align: center;
+}
+
+.buttons button {
+	padding: 10px 50px;
+	margin-top: 20px;
+	border: 2px solid white;
+	border-radius: 20px;
+	background-color: #ff60a0;
+	color: white;
+	font-family: Consolas;
+	font-weight: bold;
+	font-size: 24px;
+	transition: color .3s;
+}
+
+.buttons button:hover {
+	color: rgb(48, 51, 56);
+}
+
+.buttons button:active {
+	transform: translate(2px, 2px);
+}
