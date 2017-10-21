@@ -1,0 +1,67 @@
+#head {
+	background-color: rgb(75, 54, 124);
+	height: 100px;
+	width: 600px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 5px 5px 5px #5E636D;
+}
+
+#head h1 {
+	font-family: 'Press Start 2P';
+	color: white;
+	padding: 30px;
+
+}
+
+.row {
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #252F44;
+	box-shadow: 5px 5px 5px #5E636D;
+}
+
+.col-xs-2 {
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+	max-height: 90px;
+	margin: 5px;
+}
+
+#channel_name {
+	font-size: 36px;
+	font-family: 'Saira';
+	text-decoration: none;
+	color: #8461D7;
+}
+
+#channel_name:hover {
+	color: #9F76FF;
+}
+
+#game_status {
+	font-style: italic;
+	font-family: 'Saira';
+	color: white;
+}
+
+#stream_status {
+	font-size: 20px;
+	color: #EE3939;
+	float: right;
+	margin: 10px;
+}
+
+#offline {
+	font-size: 20px;
+	color: #ACACAC;
+	float: right;
+	margin: 10px;
+}

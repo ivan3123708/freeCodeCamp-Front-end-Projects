@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Local Weather App</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+
+	<div class="container">
+
+		<div id="wrap">
+
+			<p id="city"></p>
+			<hr>
+			<p id="description"></p>
+
+			<div class="row">
+				<div class="col-xs-6">
+					<p id="temp"></p>
+				</div>
+				<div class="col-xs-6">
+						</p><img id="icon"/>
+				</div>
+			</div>
+
+			<table>
+				<tr>
+					<th>Current Weather</th>
+					<td id="current"></td>
+				</tr>
+				<tr>
+						<th>Min Temperature</th>
+						<td id="temp-min"></td>
+					</tr>
+					<tr>
+							<th>Max Temperature</th>
+							<td id="temp-max"></td>
+						</tr>
+				<tr>
+					<th>Humidity</th>
+					<td id="hum"></td>
+				</tr>
+				<tr>
+					<th>Pressure</th>
+					<td id="press"></td>
+				</tr>
+				<tr>
+					<th>Wind Speed</th>
+					<td id="wind"></td>
+				</tr>
+			</table>
+
+			<span><i>Click temperature to toggle C/F</i></span>
+
+		</div>
+
+	</div>
+
+	</body>
+</html>
