@@ -21,7 +21,7 @@ $(document).ready(function() {
 				last = '';
 				display.html(display.html() + $(this).val());
 			}
-			// else if last input was number do the sam thing + empty task array
+			// else if last input was number do the same thing + empty task array
 			else if(last === 'num') {
 				display.html('');
 				display.html(display.html() + $(this).val());
@@ -32,6 +32,10 @@ $(document).ready(function() {
 			else if(display.html() == 0){
 				display.html('');
 				display.html(display.html() + $(this).val());
+			}
+			// prevent multiple decimal point entries
+			else if(display.html().charAt(display.html().length - 1) === '.' && $(this).val() === '.') {
+				display.html().charAt(display.html().length - 1) = '.';
 			}
 			// else just print new input
 			else {
