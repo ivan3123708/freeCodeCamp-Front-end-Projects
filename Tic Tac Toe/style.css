@@ -1,0 +1,74 @@
+button:focus {
+	outline: none;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding: 100px;
+	width: 750px;
+	font-family: Consolas;
+	text-align: center;
+}
+
+.row button {
+	width: 140px;
+	height: 140px;
+	margin: 10px;
+	border: none;
+	border-radius: 15px;
+	background-color: #06bc9b;
+	color: #06bc9b;
+	font-size: 80px;
+	font-family: Tahoma;
+	font-weight: bolder;
+}
+
+.print {
+	color: #2a3b4e !important;
+	text-shadow: 2px 2px 7px black;
+}
+
+.red {
+	text-shadow: 2px 2px 7px black;
+	color: #2a3b4e !important;
+	background-color: #FF4242 !important;
+}
+
+#message {
+	position: absolute;
+	height: 80px;
+	width: 550px;
+	margin-top: -80px;
+	color: #2a3b4e;
+	font-size: 50px;
+	font-weight: bolder;
+}
+
+.choose {
+	cursor: pointer;
+	color: #FF4242;
+}
+
+#choosePlayer {
+	position: absolute;
+	background-color: rgba(29, 43, 66, 0.856);
+	width: 300px;
+	height: 70px;
+	margin-left: 125px;
+	margin-top: 40px;
+	border-radius: 15px;
+	font-size: 50px;
+	color: white;
+	visibility: inherit;
+}
+
+#restart {
+	padding: 5px 50px;
+	margin-top: 50px;
+	border-radius: 15px;
+	font-size: 20px;
+	color: white;
+	background-color: #2a3b4e;
+	cursor: pointer;
+}
