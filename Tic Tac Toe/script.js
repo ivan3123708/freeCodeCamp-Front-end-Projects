@@ -1,14 +1,32 @@
 window.onload = function() {
 
 	var board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-	var field;
-	var player;
+	var field, player, human;
 
 	$('.choose').click(function() {
 		$('#choosePlayer').hide();
 		player = $(this).html();
+		human = $(this).html();
 		$('#message').html(player + "'s turn");
 		$(':button').on('click', buttonHandler);
+
+		if(human === 'O') {
+
+			player = 'X';
+			$('#message').html(player + "'s turn");
+
+			setTimeout(function() {
+				
+				moveAI(player, board);
+				print(player, board);
+				won(board);
+	
+				if(won(board)) return;
+	
+				player === 'O' ? player = 'X' : player = 'O';
+				$('#message').html(player + "'s turn...");
+			}, 1000);
+		}
 	});
 
 	function buttonHandler() {
@@ -25,7 +43,7 @@ window.onload = function() {
 				$('#message').html("try again...");
 			}, 1500);
 		} else {
-			
+
 			move(player, field, board);
 			print(player, board);
 			won(board);
@@ -54,7 +72,7 @@ window.onload = function() {
 		board = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 		$(':button').html('E').removeClass('print red');
 		$(':button').unbind('click');
-		$('#message').html('Choose player');
+		$('#message').html('X plays first');
 		$('#choosePlayer').show();
 	});
 }
@@ -70,12 +88,15 @@ function move(sym, num, arr) {
 
 function moveAI(sym, arr) {
 
+	var available = [];
+
 	for(let i = 0; i < 9; i++) {
 		if(typeof arr[i] == 'number') {
-			arr[i] = sym;
-			break;
+			available.push(i);
 		}
 	}
+	var random = Math.floor(Math.random() * available.length);
+	arr[available[random]] = sym;
 }
 
 function print(sym, arr) {
