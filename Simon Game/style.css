@@ -1,6 +1,7 @@
 .container {
     width: 600px;
     height: 600px;
+    margin-top: 50px;
 }
 
 .colorBtn {
@@ -11,22 +12,29 @@
 #green {
     background: rgb(53, 211, 53);
     border-top-left-radius: 100%;
-    border: 3px solid rgb(32, 36, 44):
+    box-shadow: inset 0 0 200px #0f3d21;
+    cursor: pointer;
 }
 
 #red {
     background: rgb(235, 50, 50);
     border-top-right-radius: 100%;
+    box-shadow: inset 0 0 200px #4b1414;
+    cursor: pointer;
 }
 
 #yellow {
     background: rgb(231, 231, 28);
     border-bottom-left-radius: 100%;
+    box-shadow: inset 0 0 200px #565710;
+    cursor: pointer;
 }
 
 #blue {
     background: rgb(64, 64, 180);
     border-bottom-right-radius: 100%;
+    box-shadow: inset 0 0 200px #111838;
+    cursor: pointer;
 }
 
 #control {
@@ -37,4 +45,71 @@
     width: 300px;
     border-radius: 100%;
     background: white;
+    text-align: center;
+    box-shadow: inset 0 0 10px #333333;
+}
+
+#control p {
+    margin-top: 40px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Tahoma;
+    margin-bottom: 15px;
+}
+
+#screen {
+    margin-left: 30px;
+    height: 50px;
+    width: 90px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background: rgb(0, 0, 0);
+    color: red;
+    font-size: 36px;
+}
+
+button:focus {
+    outline: none;
+}
+
+button {
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+#start button {
+    background: rgb(116, 29, 29);
+    padding: 10px 10px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 0 rgb(88, 22, 22);
+}
+
+#start button:active {
+    transform: translate(3px, 3px);
+    box-shadow: inset 0 0 3px black;
+}
+
+#strict button {
+    background: rgb(116, 29, 29);
+    padding: 10px 5px;
+    margin-top: 5px;
+    box-shadow: 3px 3px 0 rgb(88, 22, 22);
+}
+
+#strict button:active {
+    transform: translate(3px, 3px);
+    box-shadow: inset 0 0 3px black;
+}
+
+#isOn {
+    margin-top: 30px;
+    background: rgb(34, 85, 34);
+    padding: 10px 15px;
+    box-shadow: 3px 3px 0 rgb(22, 56, 22);
+}
+
+#isOn:active {
+    transform: translate(3px, 3px);
+    box-shadow: inset 0 0 3px black;
 }
