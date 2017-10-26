@@ -2,4 +2,4 @@
 
 Tic Tac Toe game (easy mode)
 
-<a href="materialistic-shape.surge.sh">VIEW DEMO</a>
+<a href="http://materialistic-shape.surge.sh/">VIEW DEMO</a>
