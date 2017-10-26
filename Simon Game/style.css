@@ -1,0 +1,40 @@
+.container {
+    width: 600px;
+    height: 600px;
+}
+
+.colorBtn {
+    height: 300px;
+    width: 300px;
+}
+
+#green {
+    background: rgb(53, 211, 53);
+    border-top-left-radius: 100%;
+    border: 3px solid rgb(32, 36, 44):
+}
+
+#red {
+    background: rgb(235, 50, 50);
+    border-top-right-radius: 100%;
+}
+
+#yellow {
+    background: rgb(231, 231, 28);
+    border-bottom-left-radius: 100%;
+}
+
+#blue {
+    background: rgb(64, 64, 180);
+    border-bottom-right-radius: 100%;
+}
+
+#control {
+    position: absolute;
+    margin-top: -450px;
+    margin-left: 150px;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    background: white;
+}
