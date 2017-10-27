@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Digital';
+    src: url('digital.ttf');
+}
+
 .container {
     width: 600px;
     height: 600px;
@@ -10,28 +15,28 @@
 }
 
 #green {
-    background: rgb(53, 211, 53);
+    background: rgb(0, 151, 0);
     border-top-left-radius: 100%;
     box-shadow: inset 0 0 200px #0f3d21;
     cursor: pointer;
 }
 
 #red {
-    background: rgb(235, 50, 50);
+    background: rgb(179, 2, 2);
     border-top-right-radius: 100%;
     box-shadow: inset 0 0 200px #4b1414;
     cursor: pointer;
 }
 
 #yellow {
-    background: rgb(231, 231, 28);
+    background: rgb(199, 199, 0);
     border-bottom-left-radius: 100%;
-    box-shadow: inset 0 0 200px #565710;
+    box-shadow: inset 0 0 200px #4d4d0e;
     cursor: pointer;
 }
 
 #blue {
-    background: rgb(64, 64, 180);
+    background: rgb(0, 79, 170);
     border-bottom-right-radius: 100%;
     box-shadow: inset 0 0 200px #111838;
     cursor: pointer;
@@ -65,7 +70,9 @@
     border: 1px solid gray;
     background: rgb(0, 0, 0);
     color: red;
-    font-size: 36px;
+    font-family: 'Digital';
+    font-size: 50px;
+    line-height: 95%;
 }
 
 button:focus {
@@ -78,26 +85,26 @@ button {
     border-radius: 10px;
 }
 
-#start button {
+#start {
     background: rgb(116, 29, 29);
     padding: 10px 10px;
     margin-top: 5px;
     box-shadow: 3px 3px 0 rgb(88, 22, 22);
 }
 
-#start button:active {
+#start:active {
     transform: translate(3px, 3px);
     box-shadow: inset 0 0 3px black;
 }
 
-#strict button {
+#strict {
     background: rgb(116, 29, 29);
     padding: 10px 5px;
     margin-top: 5px;
     box-shadow: 3px 3px 0 rgb(88, 22, 22);
 }
 
-#strict button:active {
+#strict:active {
     transform: translate(3px, 3px);
     box-shadow: inset 0 0 3px black;
 }
