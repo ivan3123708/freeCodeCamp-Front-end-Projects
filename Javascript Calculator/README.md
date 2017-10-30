@@ -2,4 +2,4 @@
 
 Calculator built in Javascript...
 
-<a href="http://crooked-elbow.surge.sh/" target="blank">VIEW DEMO</a>
+<a href="http://wrong-zoo.surge.sh/">VIEW DEMO</a>
