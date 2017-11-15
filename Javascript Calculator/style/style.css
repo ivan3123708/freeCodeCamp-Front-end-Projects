@@ -3,75 +3,74 @@
     src: url(font/digital.ttf);
 }
 
+html {
+    font-size: 62.5%;
+}
+
 #case {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 75px;
-	border-left: 3px solid #E8E7E7;
-	border-top: 3px solid #E8E7E7;
-	border-right: 3px solid #888888;
-	border-bottom: 3px solid #888888;
-	border-radius: 15px;
-	width: 350px;
-	height: 500px;
+	margin: 3.5rem auto;
+	border-left: .3rem solid #E8E7E7;
+	border-top: .3rem solid #E8E7E7;
+	border-right: .3rem solid #888888;
+	border-bottom: .3rem solid #888888;
+	border-radius: 1.5rem;
+	width: 29rem;
+	height: 43rem;
 	background-image: url('img/metal.jpg');
-	box-shadow: 7px 7px 10px #383838, inset -3px -3px 7px black;
+	box-shadow: .7rem .7rem 1rem #383838, inset -.3rem -.3rem .7rem black;
 }
 
 #brand {
-	margin-left: 17px;
-	margin-top: 10px;
+	margin: 1rem 0;
+	text-align: center;
 	color: #585858;
 	font-family: 'Oswald';
-	font-size: 20px;
+	font-size: 1.8rem;
 	user-select: none;
 	-moz-user-select: none;
 }
 
 #display {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	border-left: 2px solid #797E62;
-	border-top: 2px solid #797E62;
-	border-radius: 5px;
-	width: 310px;
-	height: 65px;
+	margin: 1rem auto 2.5rem auto;
+	border-left: .2rem solid #797E62;
+	border-top: .2rem solid #797E62;
+	border-radius: .5rem;
+	width: 90%;
+	height: 5rem;
 	background-color: #949A77;
 	text-align: right;
 	line-height: 85%;
-	letter-spacing: 4px;
+	letter-spacing: .4rem;
 	font-family: 'Digital';
-	font-size: 70px;
+	font-size: 6rem;
 	user-select: none;
 	-moz-user-select: none;
 }
 
 .buttons {
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .buttons button {
 	border: none;
-	border-radius: 5px;
-	padding: 8px;
-	margin: 8px 5px;
-	width: 70px;
+	border-radius: .5rem;
+	padding: .5rem;
+	margin: .8rem .5rem;
+	width: 21%;
 	background-color: #9C9C9C;
 	color: white;
 	text-align: center;
-	font-size: 20px;
-	box-shadow: 1px 2px 2px #292929, inset -1px -2px 6px #3D3C3A;
+	font-size: 2rem;
+	box-shadow: .1rem .2rem .2rem #292929, inset -.1rem -.2rem .6rem #3D3C3A;
 	cursor: pointer;
 	user-select: none;
 	-moz-user-select: none;
 }
 
 .buttons button:active {
-	transform: translate(0px, 2px);
-	box-shadow: 1px 2px 2px #292929 inset;
+	transform: translate(0rem, .2rem);
+	box-shadow: .1rem .2rem .2rem #292929 inset;
 }
 
 button:focus {
@@ -79,8 +78,11 @@ button:focus {
 }
 
 #power, #AC, #CE {
+	margin: .7rem .5rem;
+	padding: .8rem;
 	background-color: #D04040;
 	font-family: 'Oswald';
+	font-size: 1.6rem;
 }
 
 #divide, #times, #minus, #plus, #dot, #equals {
@@ -89,14 +91,53 @@ button:focus {
 
 #plus {
 	position: absolute;
-	width: 68px;
-	height: 105px;
-	margin-left: -73px;
-	margin-top: 188px;
+	width: 5.5rem;
+	height: 9.2rem;
+	margin-left: -6rem;
+	margin-top: 17rem;
 	z-index: 1000;
 }
 
 #blank {
-	background-color: rgba(0, 0, 0, 0);
+	background: none;
 	box-shadow: none;
+}
+
+@media(min-width: 25rem) {
+	#case {
+		width: 35rem;
+		height: 50rem;
+		margin: 7rem auto;
+	}
+
+	#brand {
+		text-align: left;
+		margin: 1rem 0 0 1.7rem;
+		font-size: 2rem;
+	}
+
+	#display {
+		width: 31rem;
+		height: 6.5rem;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+		font-size: 7rem;
+	}
+
+	.buttons button {
+		padding: .8rem;
+		width: 7rem;
+	}
+
+	#power, #AC, #CE {
+		font-size: 2rem;
+	}
+
+	#plus {
+		position: absolute;
+		width: 6.8rem;
+		height: 10.5rem;
+		margin-left: -7.3rem;
+		margin-top: 18.8rem;
+	}
 }
