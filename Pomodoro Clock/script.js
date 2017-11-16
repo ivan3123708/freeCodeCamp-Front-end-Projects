@@ -78,7 +78,7 @@ $(document).ready(function() {
 
 	// start/pause button
 	$('#start').click(function() {
-		$("#pomMinus, #pomPlus, #breakMinus, #breakPlus").prop('disabled', true);
+		$("#sessionMinus, #sessionPlus, #breakMinus, #breakPlus").prop('disabled', true);
 		$('#message').html('Session');
 		isPaused = !isPaused;
 		if(isPaused) {
@@ -94,7 +94,7 @@ $(document).ready(function() {
 	// reset button
 	$('#reset').click(function() {
 		clearInterval(countdown);
-		$("#pomMinus, #pomPlus, #breakMinus, #breakPlus").prop('disabled', false);
+		$("#sessionMinus, #sessionPlus, #breakMinus, #breakPlus").prop('disabled', false);
 		$('#session').html(25);
 		$('#breaks').html(5);
 		$('#timer').html('25:00');
