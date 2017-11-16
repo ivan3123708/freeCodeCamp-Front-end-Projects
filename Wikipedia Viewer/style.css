@@ -4,11 +4,11 @@
 
 #header_col {
 	text-align: center;
-	margin: 75px 100px;
+	margin: 30px auto;
 }
 
 #header_col h1 {
-	font-size: 50px;
+	font-size: 40px;
 	font-family: 'Patua One', cursive;
 }
 
@@ -20,27 +20,28 @@
 }
 
 #logo {
-	max-width: 200px;
+	width: 120px;
 	align-content: center;
 }
 
 #search {
-	width: 450px;
+	width: 80%;
 	margin-bottom: 40px;
 }
 
 #btn_div {
-	width: 500px;
+	width: 90%;
 	display: inline-block;
 }
 
 .btn {
+	margin: auto;
 	padding: 7px 25px;
 	text-decoration: none;
 	font-weight: bold;
 	color: #2F2F2F;
 	background-color: #F4F4F4;
-	width: 150px;
+	width: 100px;
 	box-shadow: 3px 3px 10px;
 }
 
@@ -57,10 +58,10 @@
 }
 
 .art {
-	margin: 10px;
-	padding: 30px;
+	margin: 5px;
+	padding: 15px 20px;
 	text-align: left;
-	font-size: 20px;
+	font-size: 18px;
 	border-left: 3px solid white;
 	background-color: #F4F4F4;
 }
@@ -70,9 +71,50 @@
 }
 
 .art p {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .art a {
 	text-decoration: none;
+}
+
+@media(min-width: 700px) {
+	#search {
+		width: 55%;
+		margin-bottom: 40px;
+	}
+
+	#btn_div {
+		width: 55%;
+		display: inline-block;
+	}
+}
+
+@media(min-width: 500px) {
+	#header_col {
+		margin: 75px auto;
+	}
+
+	#header_col h1 {
+		font-size: 50px;
+	}
+
+	#logo {
+		width: 200px;
+	}
+	
+	.btn {
+		padding: 7px 20px;
+		width: 150px;
+	}
+
+	.art {
+		margin: 10px;
+		padding: 30px;
+		font-size: 20px;
+	}
+
+	.art p {
+		font-size: 16px;
+	}
 }
