@@ -5,7 +5,7 @@
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
-	box-shadow: 5px 5px 5px #5E636D;
+	box-shadow: none;
 }
 
 #head h1 {
@@ -22,7 +22,7 @@
 	margin-top: 10px;
 	margin-bottom: 10px;
 	background-color: #252F44;
-	box-shadow: 5px 5px 5px #5E636D;
+	box-shadow: none;
 }
 
 .col-xs-2 {
@@ -64,4 +64,14 @@
 	color: #ACACAC;
 	float: right;
 	margin: 10px;
+}
+
+@media(min-width: 650px) {
+	#head {
+		box-shadow: 5px 5px 5px #5E636D;
+	}
+
+	.row {
+		box-shadow: 5px 5px 5px #5E636D;
+	}
 }
