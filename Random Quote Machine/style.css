@@ -3,40 +3,40 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position-y: 70%;
+    background-position-y: 60%;
+    color: white;
+    font-family: 'Amatic SC';
 }
 
 .container {
     min-height: 400px;
     height: auto;
-    width: 75%;
+    width: 100%;
     text-align: center;
 }
 
 #quote {
-    font-family: 'Amatic SC';
+    width: 90%;
+    margin: 100px auto 0 auto;
     font-size: 50px;
-    margin-top: 100px;
-    color: rgb(54, 58, 65);
 }
 
 #author {
-    font-family: 'Amatic SC';
-    font-size: 30px;
-    color: rgb(54, 58, 65);
+    font-size: 40px;
 }
 
 .buttons {
-    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
     margin: auto;
 }
 
 .buttons a {
-    color: rgb(54, 58, 65);
+    color: white;
     transition: .2s;
-    margin: 0 20%;
 }
 
 .buttons a:hover {
-    color: rgb(0, 119, 255);
+    color: #55DDFF;
 }

@@ -24,3 +24,7 @@ function newQuote() {
         $('.twitter-share-button').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(data.quote) + ' - ' + encodeURIComponent(data.author));
     });
 }
+
+$(document).ready(function() {
+    newQuote();
+});
