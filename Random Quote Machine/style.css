@@ -1,4 +1,5 @@
 body {
+	height: 100vh;
     background-image: url(fear.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -9,7 +10,7 @@ body {
 }
 
 .container {
-    min-height: 400px;
+    min-height: 450px;
     height: auto;
     width: 100%;
     text-align: center;
@@ -22,6 +23,7 @@ body {
 }
 
 #author {
+	margin: 40px 0;
     font-size: 40px;
 }
 
@@ -29,7 +31,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 40%;
-    margin: auto;
+    margin: 0 auto 20px auto;
 }
 
 .buttons a {
@@ -39,4 +41,19 @@ body {
 
 .buttons a:hover {
     color: #55DDFF;
+}
+
+@media (max-width: 500px) {
+	#quote {
+		margin: 50px auto 0 auto;
+		font-size: 30px;
+	}
+
+	#author {
+		font-size: 25px;
+	}
+
+	.buttons {
+		width: 100%;
+	}
 }

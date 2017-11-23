@@ -2,4 +2,4 @@
 
 Get random quote and post it on your twitter.
 
-<a href="http://rough-locket.surge.sh/">VIEW DEMO</a>
+<a href="http://nosy-cause.surge.sh/">VIEW DEMO</a>
