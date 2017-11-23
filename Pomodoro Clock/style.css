@@ -1,4 +1,6 @@
 body {
+	margin: 0;
+	padding: 0;
 	background-color: white;
 }
 
@@ -7,11 +9,9 @@ button:focus {
 }
 
 .container {
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 50px auto;
 	width: 700px;
-	height: 650px;
+	height: 100vh;
 }
 
 .timer {
@@ -20,6 +20,7 @@ button:focus {
 }
 
 .timer h1 {
+	margin: 0;
 	font-family: 'Roboto Slab';
 	font-weight: bold;
 	font-size: 75px;
@@ -89,4 +90,34 @@ button:focus {
 
 .buttons button:active {
 	transform: translate(2px, 2px);
+}
+
+@media (max-width: 400px) {
+	.container {
+		width: 100%;
+		margin: 20px 0;
+	}
+
+	.timer h1 {
+		margin: 20px 0 40px 0;
+		font-size: 50px;
+	}
+
+	.timer p {
+		font-size: 100px;
+	}
+
+	.control h3 {
+		font-size: 18px;
+	}
+
+	.control button {
+		padding: 0;
+	}
+
+	.buttons button {
+		margin-top: 0;
+		padding: 10px 20px;
+		font-size: 20px;
+	}
 }
